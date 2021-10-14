@@ -19,7 +19,7 @@
     />
 
     <link rel="stylesheet" href="../style/style.css" />
-
+    <script src="/vendor/orgchart.js"></script>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -123,7 +123,81 @@
                 </div>
               </div>
             </div>
-            <div class="structure-board"></div>
+            <div class="structure-board">
+              <!-- <div class="row">
+                <div class="col-lg-12">
+                  <div class="tree">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="/image/orang-1.png" alt="" /><br /><span
+                            >Hans Spasio</span
+                          ><br /><span>Direktur</span></a
+                        >
+
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><img
+                                src="/image/orang-2.png"
+                                alt=""
+                              /><br /><span>Sarah Emma</span><br /><span
+                                >Div. Administrasi</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a href=""
+                              ><img
+                                src="/image/orang-3.png"
+                                alt=""
+                              /><br /><span>Robert Hobs</span><br /><span
+                                >Div. Design Interior</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a href=""
+                              ><img
+                                src="/image/orang-4.png"
+                                alt=""
+                              /><br /><span>Jack Siblid</span><br /><span
+                                >Div. arsitek</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a href=""
+                              ><img
+                                src="/image/orang-5.png"
+                                alt=""
+                              /><br /><span>Louvre Nemoy</span><br /><span
+                                >Div. Sipil</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a href=""
+                              ><img
+                                src="/image/orang-6.png"
+                                alt=""
+                              /><br /><span>Caroline Serete</span><br /><span
+                                >Div. QA</span
+                              ></a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="chart" id="orgchart"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -135,5 +209,30 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      var chart = new OrgChart(document.getElementById("orgchart"), {
+        mouseScrool: OrgChart.action.none,
+        mouseClick: OrgChart.action.none,
+        nodeBinding: {
+          field_0: "name",
+          field_1: "title",
+          img_0: "img",
+        },
+        nodes: [
+          {
+            id: 1,
+            name: "Amber McKenzie",
+            title: "Direktur",
+            img: "/image/orang-1.png",
+          },
+          { id: 2, pid: 1, name: "Ava Field" },
+          { id: 3, pid: 1, name: "Peter Stevens" },
+          { id: 3, pid: 1, name: "Peter Stevens" },
+          { id: 3, pid: 1, name: "Peter Stevens" },
+          { id: 3, pid: 1, name: "Peter Stevens" },
+        ],
+      });
+    </script>
   </body>
 </html>
