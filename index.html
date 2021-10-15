@@ -24,7 +24,7 @@
   </head>
   <body>
     <section class="site-navbar">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">TEMPEST</a>
           <button
@@ -94,8 +94,8 @@
     </section>
 
     <section class="site-content">
-      <div class="row">
-        <div class="col-lg-10 offset-lg-1">
+      <div class="row justify-content-center">
+        <div class="col-lg-11">
           <div class="content-card">
             <div class="about-item">
               <div class="container">
@@ -192,9 +192,131 @@
                   </div>
                 </div>
               </div> -->
+              <div class="row text-center">
+                <div class="col-12">
+                  <h2 class="structure-title">Our Team</h2>
+                </div>
+              </div>
               <div class="row">
                 <div class="col-12">
                   <div class="chart" id="orgchart"></div>
+                </div>
+              </div>
+            </div>
+            <div class="articles">
+              <div
+                class="container"
+                style="padding-left: 100px; padding-right: 100px"
+              >
+                <div class="row text-center">
+                  <div class="col-lg-12">
+                    <h2 class="article-main-title">Our article</h2>
+                    <br />
+                    <a href="">
+                      <div class="arrow">
+                        <img src="/image/Vector.png" alt="" />
+                        <br />
+                        <img src="/image/Vector-1.png" alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div
+                      class="card align-items-center w-100 border-0"
+                      style=""
+                    >
+                      <img
+                        src="/image/article-1.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Ramayana: Desain Ruang Acara Outdoor ala Andra Matin
+                        </h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a
+                          href="#"
+                          class="
+                            btn btn-primary
+                            d-flex
+                            justify-content-center
+                            btn-card
+                          "
+                          >read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div
+                      class="card align-items-center w-100 border-0"
+                      style=""
+                    >
+                      <img
+                        src="/image/article-2.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Desain Rumah Minimalis yang Sederhana Namun Tampil
+                          Manis
+                        </h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a
+                          href="#"
+                          class="
+                            btn btn-primary
+                            d-flex
+                            justify-content-center
+                            btn-card
+                          "
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div
+                      class="card align-items-center w-100 border-0"
+                      style=""
+                    >
+                      <img
+                        src="/image/article-3.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Arsitektur Rumah Unik yang Menghadirkan Suasana
+                          Kampung dan Alam
+                        </h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a
+                          href="#"
+                          class="
+                            btn btn-primary
+                            d-flex
+                            justify-content-center
+                            btn-card
+                          "
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -212,8 +334,10 @@
 
     <script>
       var chart = new OrgChart(document.getElementById("orgchart"), {
+        template: "rony",
+        enableSearch: false,
+        nodeMouseClick: OrgChart.action.none,
         mouseScrool: OrgChart.action.none,
-        mouseClick: OrgChart.action.none,
         nodeBinding: {
           field_0: "name",
           field_1: "title",
@@ -226,11 +350,41 @@
             title: "Direktur",
             img: "/image/orang-1.png",
           },
-          { id: 2, pid: 1, name: "Ava Field" },
-          { id: 3, pid: 1, name: "Peter Stevens" },
-          { id: 3, pid: 1, name: "Peter Stevens" },
-          { id: 3, pid: 1, name: "Peter Stevens" },
-          { id: 3, pid: 1, name: "Peter Stevens" },
+          {
+            id: 2,
+            pid: 1,
+            name: "Ava Field",
+            title: "Direktur",
+            img: "/image/orang-2.png",
+          },
+          {
+            id: 3,
+            pid: 1,
+            name: "Peter Stevens",
+            title: "Direktur",
+            img: "/image/orang-3.png",
+          },
+          {
+            id: 4,
+            pid: 1,
+            name: "Peter Stevens",
+            title: "Direktur",
+            img: "/image/orang-4.png",
+          },
+          {
+            id: 5,
+            pid: 1,
+            name: "Peter Stevens",
+            title: "Direktur",
+            img: "/image/orang-5.png",
+          },
+          {
+            id: 6,
+            pid: 1,
+            name: "Peter Stevens",
+            title: "Direktur",
+            img: "/image/orang-6.png",
+          },
         ],
       });
     </script>
