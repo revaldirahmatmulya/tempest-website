@@ -148,8 +148,41 @@ body {
   background-color: #647a8f;
 }
 
-@media (max-width: 767.98px) {
+.chart {
+  display: none;
+}
+
+.img-carousel {
+  width: 400px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+/* .carousel-inner span {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #495866;
+
+  background-color: white;
+} */
+
+.team-name {
+  color: #495866;
+  font-weight: bold;
+}
+.team-title {
+  color: #73233c;
+  font-weight: bold;
+}
+
+/* .team-title {
+  margin-top: 1000px;
+} */
+/* @media (max-width: 767.98px) {
   .chart {
     display: none;
   }
-}
+} */
