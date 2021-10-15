@@ -153,9 +153,8 @@ body {
 }
 
 .img-carousel {
-  width: 400px;
-  margin-top: 100px;
-  margin-bottom: 200px;
+  width: 200px;
+  margin-top: 30px;
 }
 
 /* .carousel-inner span {
@@ -170,12 +169,26 @@ body {
 } */
 
 .team-name {
-  color: #495866;
+  font-style: normal;
   font-weight: bold;
+  font-size: 30px;
+  color: #739dc3;
 }
 .team-title {
-  color: #73233c;
-  font-weight: bold;
+  margin-top: -10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #f57c00;
+}
+
+.card-team {
+  margin-top: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 370px;
+  width: 100px;
 }
 
 /* .team-title {
