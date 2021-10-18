@@ -19,7 +19,8 @@
     />
 
     <link rel="stylesheet" href="../style/style.css" />
-    <script src="/vendor/orgchart.js"></script>
+    <link rel="stylesheet" href="/style/tree.css" />
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -72,7 +73,6 @@
         <div class="col-lg-12">
           <img class="w-100 hero-img" src="/image/Hero.jpg" alt="" />
         </div>
-
         <div class="circle circle-bg"></div>
         <div class="col-lg-2">
           <div class="container">
@@ -120,7 +120,7 @@
                       diskusi dan konsultasi kepada konsumen nantinya.
                     </p>
                   </div>
-                  <div class="col-lg-5 order-lg-2 order-sm-1 order-xs-1">
+                  <div class="col-lg-6 order-lg-2 order-sm-1 order-xs-1">
                     <img src="/image/item-1.png" class="about-img" alt="" />
                   </div>
                 </div>
@@ -132,10 +132,80 @@
                   <h2 class="structure-title">Our Team</h2>
                 </div>
               </div>
-              <div class="row">
+              <div class="row text-center">
                 <div class="col-lg-12">
                   <!-- Family tree -->
-                  <div class="chart" id="orgchart"></div>
+                  <div class="chart tree">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <br />
+                          <h3>Hans Spasio</h3>
+                          <br />
+                          <p>DIREKTUR</p>
+
+                          <img src="image/orang-1.png" alt="" />
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-2.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-3.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-4.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-5.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-6.png" alt="" />
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                   <!-- Slider version -->
                   <div class="carousel-version">
                     <div
@@ -564,9 +634,17 @@
               <div class="col-lg-4 col-sm-12 footer-title">
                 <a class="navbar-brand footer-brand" href="#">TEMPEST</a>
               </div>
-              <div class="col-lg-4 col-sm-12 footer-contact">
+              <div
+                class="
+                  col-lg-4 col-sm-12
+                  footer-contact
+                  d-flex
+                  flex-wrap
+                  align-content-center
+                "
+              >
                 <h3>Contact Us</h3>
-                <li><p>081234567890</p></li>
+                <li class=""><p>081234567890</p></li>
                 <li><p>Tempestorganization@tempest.com</p></li>
                 <li><p>TempestWeb.org.co.id</p></li>
               </div>
@@ -599,62 +677,5 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      var chart = new OrgChart(document.getElementById("orgchart"), {
-        template: "rony",
-        enableSearch: false,
-        nodeMouseClick: OrgChart.action.none,
-        mouseScrool: OrgChart.action.none,
-        nodeBinding: {
-          field_0: "name",
-          field_1: "title",
-          img_0: "img",
-        },
-        nodes: [
-          {
-            id: 1,
-            name: "Amber McKenzie",
-            title: "Direktur",
-            img: "/image/orang-1.png",
-          },
-          {
-            id: 2,
-            pid: 1,
-            name: "Ava Field",
-            title: "Direktur",
-            img: "/image/orang-2.png",
-          },
-          {
-            id: 3,
-            pid: 1,
-            name: "Peter Stevens",
-            title: "Direktur",
-            img: "/image/orang-3.png",
-          },
-          {
-            id: 4,
-            pid: 1,
-            name: "Peter Stevens",
-            title: "Direktur",
-            img: "/image/orang-4.png",
-          },
-          {
-            id: 5,
-            pid: 1,
-            name: "Peter Stevens",
-            title: "Direktur",
-            img: "/image/orang-5.png",
-          },
-          {
-            id: 6,
-            pid: 1,
-            name: "Peter Stevens",
-            title: "Direktur",
-            img: "/image/orang-6.png",
-          },
-        ],
-      });
-    </script>
   </body>
 </html>

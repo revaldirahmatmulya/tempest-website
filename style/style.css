@@ -33,10 +33,11 @@ body {
   width: 900px;
   height: 700px;
   opacity: 0.5;
-  border-radius: 100%;
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   left: -200px;
+  border-radius: 100%;
+
   z-index: 1;
 }
 .title-hero {
@@ -46,7 +47,7 @@ body {
 }
 
 .title-item {
-  font-family: Poppins;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
@@ -80,7 +81,7 @@ body {
 
 .about-img {
   margin-top: 200px;
-  width: 600px;
+  width: 100%;
   height: 400px;
 }
 
@@ -151,7 +152,7 @@ body {
 }
 
 .chart {
-  display: ruby;
+  display: inline-block;
 }
 
 .galley-title {
@@ -195,9 +196,9 @@ hr {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-
+  margin-top: 25px;
   color: white;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 .contact-info li {
   list-style: none;
@@ -218,8 +219,191 @@ hr {
 .gallery-slide {
   display: none;
 }
+.gallery-section {
+  margin-bottom: 50px;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-@media (min-width: 0px) and (max-width: 992px) {
+.footer-social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 576px) {
+  .title-hero {
+    z-index: 3;
+    position: absolute;
+    bottom: 350px;
+    left: 20px;
+  }
+  .circle-bg {
+    background-color: black;
+    width: 700px;
+    height: 500px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 230px;
+    left: -100px;
+    border-radius: 100%;
+
+    z-index: 1;
+  }
+  .title-item {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    color: white;
+  }
+
+  .subtitle-item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+  }
+  .about-text {
+    margin-top: 50px;
+  }
+
+  .about-img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-card {
+    background-color: white;
+    border-radius: 50px;
+    width: 90%;
+    height: auto;
+    z-index: 4;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .structure-board {
+    margin-top: 150px;
+    background-color: #f6d5cf;
+    width: 100%;
+    height: 800px;
+  }
+
+  .chart {
+    display: none;
+  }
+
+  .carousel-version {
+    display: inline;
+  }
+  .img-carousel {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .team-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #739dc3;
+  }
+  .team-title {
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f57c00;
+  }
+
+  .card-team {
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 370px;
+    width: 100px;
+  }
+
+  .carousel-item {
+    height: 500px;
+  }
+
+  .carousel-btn-next-icon,
+  .carousel-btn-prev-icon {
+    height: 80px;
+    width: 80px;
+
+    background-color: #73233c;
+    border-radius: 100%;
+  }
+
+  .btn-card {
+    margin-bottom: 40px;
+  }
+
+  .gallery-image {
+    display: none;
+  }
+
+  .gallery-slide {
+    display: inherit;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .contact-info {
+    height: 400px;
+  }
+  .footer-title,
+  .footer-contact,
+  .footer-social {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 578px) and (max-width: 768px) {
+  .title-hero {
+    z-index: 3;
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
+  }
+  .title-item {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    color: white;
+  }
+
+  .subtitle-item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+  }
   .about-text {
     margin-top: 200px;
   }
@@ -285,7 +469,7 @@ hr {
     width: 100px;
   }
 
-  .carousel-item-list {
+  .carousel-item {
     height: 500px;
   }
 
@@ -308,8 +492,8 @@ hr {
 
   .gallery-slide {
     display: inherit;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   .contact-info {
@@ -333,23 +517,122 @@ hr {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) and (max-width: 992px) {
+  .title-hero {
+    z-index: 3;
+    position: absolute;
+    bottom: 250px;
+    left: 40px;
+  }
+  .about-text {
+    margin-top: 200px;
+  }
+
+  .about-img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-card {
+    background-color: white;
+    border-radius: 50px;
+    width: 90%;
+    height: auto;
+    z-index: 4;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .structure-board {
+    margin-top: 150px;
+    background-color: #f6d5cf;
+    width: 100%;
+    height: 800px;
+  }
+
+  .chart {
+    display: none;
+  }
+
+  .carousel-version {
+    display: inline;
+  }
+  .img-carousel {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .team-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #739dc3;
+  }
+  .team-title {
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f57c00;
+  }
+
+  .card-team {
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 370px;
+    width: 100px;
+  }
+
+  .carousel-item {
+    height: 500px;
+  }
+
+  .carousel-btn-next-icon,
+  .carousel-btn-prev-icon {
+    height: 80px;
+    width: 80px;
+
+    background-color: #73233c;
+    border-radius: 100%;
+  }
+
+  .btn-card {
+    margin-bottom: 40px;
+  }
+
+  .gallery-image {
+    display: none;
+  }
+
+  .gallery-slide {
+    display: inherit;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .contact-info {
+    height: 400px;
+  }
   .footer-title,
   .footer-contact,
   .footer-social {
     display: flex;
-    flex-direction: column;
+    margin-bottom: 40px;
     align-items: center;
+    flex-direction: column;
   }
-  .footer-title {
-    justify-content: center;
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-left: 20px;
   }
 }
-/* .team-title {
-  margin-top: 1000px;
-} */
-/* @media (max-width: 767.98px) {
-  .chart {
-    display: none;
-  }
-} */
