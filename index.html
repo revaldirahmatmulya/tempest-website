@@ -19,48 +19,657 @@
     />
 
     <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="/style/tree.css" />
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">TEMPEST</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link brand-name active" aria-current="page" href="#"
-                >Home</a
-              >
-            </li>
+    <section class="site-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">TEMPEST</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link brand-name active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Articles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galleries</a>
-            </li>
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galleries</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="site-hero">
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="w-100 hero-img" src="/image/Hero.jpg" alt="" />
+        </div>
+        <div class="circle circle-bg"></div>
+        <div class="col-lg-2">
+          <div class="container">
+            <div class="title-hero">
+              <h1 class="title-item">
+                Let’s Discuss Your<br />
+                Plan With Us
+              </h1>
+              <br />
+              <br />
+              <p class="subtitle-item">
+                Solusi terbaik konsultasi ide dan desain minimalis<br />
+                untuk rencana pembangunan Anda
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
+
+    <section class="site-content">
+      <!-- Content in card -->
+      <div class="row justify-content-center">
+        <div class="col-lg-11">
+          <div class="content-card">
+            <div class="about-item">
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="col-lg-6 about-text order-lg-1 order-sm-2 order-xs-2"
+                  >
+                    <h2 class="about-title">About Us</h2>
+                    <br />
+                    <br />
+                    <p class="about-subtitle">
+                      Tempest adalah perusahaan yang bergeak dalam bidang jasa
+                      arsitektur, jasa desain dan gambar arsitek yang sudah
+                      berpengalaman dalam menangani berbagai proyek secara
+                      online untuk seluruh wilayah di Indonesia. Tepest telah
+                      berpengalaman dalam mendesain berbagai macam bagunan,
+                      mulai dari rumah minimalis, ruko, cafe, hingga masjid dan
+                      pesantren. Kami juga hadir untuk memberikan konsultasi
+                      terkait rencana pembangunan anda dengan team kami yang
+                      dibekali kemampuan berkomunikasi, sehingga akan memudahkan
+                      diskusi dan konsultasi kepada konsumen nantinya.
+                    </p>
+                  </div>
+                  <div class="col-lg-6 order-lg-2 order-sm-1 order-xs-1">
+                    <img src="/image/item-1.png" class="about-img" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="structure-board">
+              <div class="row text-center">
+                <div class="col-12">
+                  <h2 class="structure-title">Our Team</h2>
+                </div>
+              </div>
+              <div class="row text-center">
+                <div class="col-lg-12">
+                  <!-- Family tree -->
+                  <div class="chart tree">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <br />
+                          <h3>Hans Spasio</h3>
+                          <br />
+                          <p>DIREKTUR</p>
+
+                          <img src="image/orang-1.png" alt="" />
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-2.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-3.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-4.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-5.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <br />
+                              <h3>Hans Spasio</h3>
+                              <br />
+                              <p>DIREKTUR</p>
+                              <br />
+
+                              <img src="image/orang-6.png" alt="" />
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Slider version -->
+                  <div class="carousel-version">
+                    <div
+                      id="carouselExampleControls"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div
+                          class="
+                            carousel-item
+                            active
+                            text-center
+                            carousel-item-list
+                          "
+                        >
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="card card-team" style="width: 18rem">
+                                <div
+                                  class="
+                                    card-body
+                                    shadow-lg
+                                    p-3
+                                    bg-body
+                                    rounded
+                                  "
+                                >
+                                  <p class="card-text team-name">Hans Spasio</p>
+                                  <p class="team-title">DIREKTUR</p>
+                                  <img
+                                    class="img-carousel"
+                                    src="/image/orang-1.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="card card-team" style="width: 18rem">
+                                <div
+                                  class="
+                                    card-body
+                                    shadow-lg
+                                    p-3
+                                    bg-body
+                                    rounded
+                                  "
+                                >
+                                  <p class="card-text team-name">Hans Spasio</p>
+                                  <p class="team-title">DIREKTUR</p>
+                                  <img
+                                    class="img-carousel"
+                                    src="/image/orang-2.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="card card-team" style="width: 18rem">
+                                <div
+                                  class="
+                                    card-body
+                                    shadow-lg
+                                    p-3
+                                    bg-body
+                                    rounded
+                                  "
+                                >
+                                  <p class="card-text team-name">Hans Spasio</p>
+                                  <p class="team-title">DIREKTUR</p>
+                                  <img
+                                    class="img-carousel"
+                                    src="/image/orang-3.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="card card-team" style="width: 18rem">
+                                <div
+                                  class="
+                                    card-body
+                                    shadow-lg
+                                    p-3
+                                    bg-body
+                                    rounded
+                                  "
+                                >
+                                  <p class="card-text team-name">Hans Spasio</p>
+                                  <p class="team-title">DIREKTUR</p>
+                                  <img
+                                    class="img-carousel"
+                                    src="/image/orang-4.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="card card-team" style="width: 18rem">
+                                <div
+                                  class="
+                                    card-body
+                                    shadow-lg
+                                    p-3
+                                    bg-body
+                                    rounded
+                                  "
+                                >
+                                  <p class="card-text team-name">Hans Spasio</p>
+                                  <p class="team-title">DIREKTUR</p>
+                                  <img
+                                    class="img-carousel"
+                                    src="/image/orang-5.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="card card-team" style="width: 18rem">
+                                <div
+                                  class="
+                                    card-body
+                                    shadow-lg
+                                    p-3
+                                    bg-body
+                                    rounded
+                                  "
+                                >
+                                  <p class="card-text team-name">Hans Spasio</p>
+                                  <p class="team-title">DIREKTUR</p>
+                                  <img
+                                    class="img-carousel"
+                                    src="/image/orang-6.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="
+                            carousel-control-prev-icon carousel-btn-prev-icon
+                          "
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="
+                            carousel-control-next-icon carousel-btn-next-icon
+                          "
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="articles">
+              <div
+                class="container"
+                style="padding-left: 100px; padding-right: 100px"
+              >
+                <div class="row text-center">
+                  <div class="col-lg-12">
+                    <h2 class="article-main-title">Our article</h2>
+                    <br />
+                    <a href="">
+                      <div class="arrow">
+                        <img src="/image/Vector.png" alt="" />
+                        <br />
+                        <img src="/image/Vector-1.png" alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card align-items-center w-100 border-0">
+                      <img
+                        src="/image/article-1.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Ramayana: Desain Ruang Acara Outdoor ala Andra Matin
+                        </h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a
+                          href="#"
+                          class="
+                            btn btn-primary
+                            d-flex
+                            justify-content-center
+                            btn-card
+                          "
+                          >read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card align-items-center w-100 border-0">
+                      <img
+                        src="/image/article-2.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Desain Rumah Minimalis yang Sederhana Namun Tampil
+                          Manis
+                        </h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a
+                          href="#"
+                          class="
+                            btn btn-primary
+                            d-flex
+                            justify-content-center
+                            btn-card
+                          "
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card align-items-center w-100 border-0">
+                      <img
+                        src="/image/article-3.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Arsitektur Rumah Unik yang Menghadirkan Suasana
+                          Kampung dan Alam
+                        </h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a
+                          href="#"
+                          class="
+                            btn btn-primary
+                            d-flex
+                            justify-content-center
+                            btn-card
+                          "
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content outside card -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="container">
+            <div class="gallery-section">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <p class="galley-title mb-4">Gallery</p>
+                </div>
+              </div>
+              <div class="gallery-slide">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div
+                      id="carouselExampleControls2"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="/image/gallery-1.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="/image/gallery-2.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="/image/gallery-3.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls2"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls2"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-image">
+                <div class="row text-center mb-4">
+                  <div class="col-lg-4">
+                    <img src="/image/gallery-1.png" alt="" />
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="/image/gallery-2.png" alt="" />
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="/image/gallery-3.png" alt="" />
+                  </div>
+                </div>
+                <div class="row text-center mb-4">
+                  <div class="col-lg-4">
+                    <img src="/image/gallery-4.png" alt="" />
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="/image/gallery-5.png" alt="" />
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="/image/gallery-6.png" alt="" />
+                  </div>
+                </div>
+                <div class="row text-center mb-4">
+                  <div class="col-lg-4">
+                    <img src="/image/gallery-7.png" alt="" />
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="/image/gallery-8.png" alt="" />
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="/image/gallery-9.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-footer">
+      <footer class="footer border-top py-4">
+        <div class="container-fluid">
+          <div class="contact-info">
+            <div class="row">
+              <div class="col-lg-4 col-sm-12 footer-title">
+                <a class="navbar-brand footer-brand" href="#">TEMPEST</a>
+              </div>
+              <div
+                class="
+                  col-lg-4 col-sm-12
+                  footer-contact
+                  d-flex
+                  flex-wrap
+                  align-content-center
+                "
+              >
+                <h3>Contact Us</h3>
+                <li class=""><p>081234567890</p></li>
+                <li><p>Tempestorganization@tempest.com</p></li>
+                <li><p>TempestWeb.org.co.id</p></li>
+              </div>
+              <div class="col-lg-4 footer-social col-sm-12">
+                <h3>Social Media</h3>
+                <div class="social-icon d-flex justify-content-between">
+                  <a href=""><img src="/image/twitter.svg" alt="" /></a>
+                  <a href=""><img src="/image/instagram.svg" alt="" /></a>
+                  <a href=""><img src="/image/facebook.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <hr />
+              <p class="m-0 text-center text-muted footer-copyright">
+                &copy; 2021, Tempest Team
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
