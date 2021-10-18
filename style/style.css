@@ -1,8 +1,13 @@
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: #e5e5e5;
 }
 
-.navbar-brand {
+.navbar {
+  z-index: 2;
+}
+.navbar-custom .navbar-brand {
   color: #739dc3;
   font-style: normal;
   font-weight: 800;
@@ -17,4 +22,617 @@ body {
 }
 .nav-link:hover {
   color: #b8b8b8;
+}
+
+.hero-img {
+  height: 750px;
+}
+
+.circle-bg {
+  background-color: black;
+  width: 900px;
+  height: 700px;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 100px;
+  left: -200px;
+  border-radius: 100%;
+
+  z-index: 1;
+}
+.title-hero {
+  z-index: 3;
+  position: absolute;
+  bottom: 250px;
+}
+
+.title-item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  color: white;
+}
+
+.subtitle-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+.content-card {
+  background-color: white;
+  border-radius: 50px;
+  width: 100%;
+  height: 2500px;
+  z-index: 4;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+.about-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.about-text {
+  margin-top: 200px;
+}
+
+.about-img {
+  margin-top: 200px;
+  width: 100%;
+  height: 400px;
+}
+
+.about-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #73233c;
+}
+
+.about-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+
+.structure-board {
+  margin-top: 150px;
+  background-color: #f6d5cf;
+  width: 100%;
+  height: 900px;
+}
+
+.structure-title,
+.article-main-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #73233c;
+  margin-top: 80px;
+}
+
+.arrow {
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #6e7491;
+}
+
+.card-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #7c8d80;
+}
+
+.btn-card {
+  width: 120px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #495866;
+  /* display: flex;
+  align-items: center; */
+}
+
+.btn-card:hover {
+  background-color: #647a8f;
+}
+
+.carousel-version {
+  display: none;
+}
+
+.chart {
+  display: inline-block;
+}
+
+.galley-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #73233c;
+}
+
+hr {
+  width: 98%;
+  border: 0;
+  border-bottom: 2px solid #a5a6f6;
+  margin: 20px auto;
+}
+
+.footer-copyright {
+  color: #a5a6f6;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.site-footer {
+  background-color: #1a1a1a;
+}
+
+.site-footer .navbar-brand {
+  color: #739dc3;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.contact-info {
+  height: 150px;
+}
+
+.contact-info h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+.contact-info li {
+  list-style: none;
+}
+
+.contact-info p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+  margin-top: -10px;
+}
+
+.social-icon {
+  width: 117px;
+}
+
+.gallery-slide {
+  display: none;
+}
+.gallery-section {
+  margin-bottom: 50px;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 576px) {
+  .title-hero {
+    z-index: 3;
+    position: absolute;
+    bottom: 350px;
+    left: 20px;
+  }
+  .circle-bg {
+    background-color: black;
+    width: 700px;
+    height: 500px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 230px;
+    left: -100px;
+    border-radius: 100%;
+
+    z-index: 1;
+  }
+  .title-item {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    color: white;
+  }
+
+  .subtitle-item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+  }
+  .about-text {
+    margin-top: 50px;
+  }
+
+  .about-img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-card {
+    background-color: white;
+    border-radius: 50px;
+    width: 90%;
+    height: auto;
+    z-index: 4;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .structure-board {
+    margin-top: 150px;
+    background-color: #f6d5cf;
+    width: 100%;
+    height: 800px;
+  }
+
+  .chart {
+    display: none;
+  }
+
+  .carousel-version {
+    display: inline;
+  }
+  .img-carousel {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .team-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #739dc3;
+  }
+  .team-title {
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f57c00;
+  }
+
+  .card-team {
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 370px;
+    width: 100px;
+  }
+
+  .carousel-item {
+    height: 500px;
+  }
+
+  .carousel-btn-next-icon,
+  .carousel-btn-prev-icon {
+    height: 80px;
+    width: 80px;
+
+    background-color: #73233c;
+    border-radius: 100%;
+  }
+
+  .btn-card {
+    margin-bottom: 40px;
+  }
+
+  .gallery-image {
+    display: none;
+  }
+
+  .gallery-slide {
+    display: inherit;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .contact-info {
+    height: 400px;
+  }
+  .footer-title,
+  .footer-contact,
+  .footer-social {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 578px) and (max-width: 768px) {
+  .title-hero {
+    z-index: 3;
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
+  }
+  .title-item {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    color: white;
+  }
+
+  .subtitle-item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+  }
+  .about-text {
+    margin-top: 200px;
+  }
+
+  .about-img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-card {
+    background-color: white;
+    border-radius: 50px;
+    width: 90%;
+    height: auto;
+    z-index: 4;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .structure-board {
+    margin-top: 150px;
+    background-color: #f6d5cf;
+    width: 100%;
+    height: 800px;
+  }
+
+  .chart {
+    display: none;
+  }
+
+  .carousel-version {
+    display: inline;
+  }
+  .img-carousel {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .team-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #739dc3;
+  }
+  .team-title {
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f57c00;
+  }
+
+  .card-team {
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 370px;
+    width: 100px;
+  }
+
+  .carousel-item {
+    height: 500px;
+  }
+
+  .carousel-btn-next-icon,
+  .carousel-btn-prev-icon {
+    height: 80px;
+    width: 80px;
+
+    background-color: #73233c;
+    border-radius: 100%;
+  }
+
+  .btn-card {
+    margin-bottom: 40px;
+  }
+
+  .gallery-image {
+    display: none;
+  }
+
+  .gallery-slide {
+    display: inherit;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .contact-info {
+    height: 400px;
+  }
+  .footer-title,
+  .footer-contact,
+  .footer-social {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .title-hero {
+    z-index: 3;
+    position: absolute;
+    bottom: 250px;
+    left: 40px;
+  }
+  .about-text {
+    margin-top: 200px;
+  }
+
+  .about-img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-card {
+    background-color: white;
+    border-radius: 50px;
+    width: 90%;
+    height: auto;
+    z-index: 4;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .structure-board {
+    margin-top: 150px;
+    background-color: #f6d5cf;
+    width: 100%;
+    height: 800px;
+  }
+
+  .chart {
+    display: none;
+  }
+
+  .carousel-version {
+    display: inline;
+  }
+  .img-carousel {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .team-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #739dc3;
+  }
+  .team-title {
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f57c00;
+  }
+
+  .card-team {
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 370px;
+    width: 100px;
+  }
+
+  .carousel-item {
+    height: 500px;
+  }
+
+  .carousel-btn-next-icon,
+  .carousel-btn-prev-icon {
+    height: 80px;
+    width: 80px;
+
+    background-color: #73233c;
+    border-radius: 100%;
+  }
+
+  .btn-card {
+    margin-bottom: 40px;
+  }
+
+  .gallery-image {
+    display: none;
+  }
+
+  .gallery-slide {
+    display: inherit;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .contact-info {
+    height: 400px;
+  }
+  .footer-title,
+  .footer-contact,
+  .footer-social {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-left: 20px;
+  }
 }
