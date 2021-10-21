@@ -1,0 +1,161 @@
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  z-index: 2;
+}
+.navbar-custom .navbar-brand {
+  color: #739dc3;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+}
+.navbar-brand:hover {
+  color: #739dc3;
+}
+
+.nav-link {
+  color: black;
+}
+.nav-link:hover {
+  color: #b8b8b8;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #73233c;
+}
+
+hr {
+  width: 98%;
+  border: 0;
+  border-bottom: 2px solid #a5a6f6;
+  margin: 20px auto;
+}
+
+.footer-copyright {
+  color: #a5a6f6;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.site-footer {
+  background-color: #1a1a1a;
+}
+
+.site-footer .navbar-brand {
+  color: #739dc3;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.contact-info {
+  height: 150px;
+}
+
+.contact-info h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+.contact-info li {
+  list-style: none;
+}
+
+.contact-info p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+  margin-top: -10px;
+}
+
+.social-icon {
+  width: 117px;
+}
+
+.gallery-slide {
+  display: none;
+}
+.gallery-section {
+  margin-bottom: 50px;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 992px) {
+  .contact-info {
+    height: 400px;
+  }
+  .footer-title,
+  .footer-contact,
+  .footer-social {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-left: 20px;
+  }
+}
+.article-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  color: #739dc3;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.other-post a {
+  text-decoration: none;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #6e7491;
+}
+
+.card-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #7c8d80;
+}
+
+.btn-card {
+  width: 120px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #495866;
+}
