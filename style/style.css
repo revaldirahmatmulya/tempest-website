@@ -227,11 +227,6 @@ hr {
   margin-bottom: 50px;
 }
 
-.gallery-section img {
-  width: 400px;
-  height: 300px;
-}
-
 .footer-contact {
   display: flex;
   flex-direction: column;
