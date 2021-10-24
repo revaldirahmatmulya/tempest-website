@@ -19,12 +19,20 @@
 
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="/style/tree.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Hello, world!</title>
   </head>
   <body>
     <section class="site-navbar">
-      <nav class="navbar navbar-expand-lg navbar-light navbar-custom bg-light">
+      <nav
+        class="
+          navbar navbar-expand-lg
+          fixed-top
+          navbar-light navbar-custom
+          bg-light
+        "
+      >
         <div class="container">
           <a class="navbar-brand" href="#">TEMPEST</a>
           <button
@@ -42,24 +50,33 @@
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a
-                  class="nav-link brand-name active"
+                  class="nav-link brand-name active scroll"
                   aria-current="page"
+                  data-scroll
                   href="#"
                   >Home</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#about">About us</a>
+                <a class="nav-link scroll" data-scroll href="#about"
+                  >About us</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#structure">Our Team</a>
+                <a class="nav-link scroll" data-scroll href="#structure"
+                  >Our Team</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#articles">Articles</a>
+                <a class="nav-link scroll" data-scroll href="#articles"
+                  >Articles</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#gallery">Galleries</a>
+                <a class="nav-link scroll" data-scroll href="#gallery"
+                  >Galleries</a
+                >
               </li>
             </ul>
           </div>
@@ -76,13 +93,21 @@
         <div class="col-lg-2">
           <div class="container">
             <div class="title-hero">
-              <h1 class="title-item">
+              <h1
+                class="title-item"
+                data-aos="fade-down"
+                data-aos-duration="500"
+              >
                 Let’s Discuss Your<br />
                 Plan With Us
               </h1>
               <br />
               <br />
-              <p class="subtitle-item">
+              <p
+                class="subtitle-item"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 Solusi terbaik konsultasi ide dan desain minimalis<br />
                 untuk rencana pembangunan Anda
               </p>
@@ -92,21 +117,32 @@
       </div>
     </section>
 
-    <section class="site-content" id="about">
+    <section class="site-content" id="about" name="about">
       <!-- Content in card -->
       <div class="row justify-content-center">
         <div class="col-lg-11">
           <div class="content-card">
+            <!-- About -->
             <div class="about-item">
               <div class="container">
                 <div class="row">
                   <div
                     class="col-lg-6 about-text order-lg-1 order-sm-2 order-xs-2"
                   >
-                    <h2 class="about-title">About Us</h2>
+                    <h2
+                      class="about-title"
+                      data-aos="fade-down"
+                      data-aos-duration="700"
+                    >
+                      About Us
+                    </h2>
                     <br />
                     <br />
-                    <p class="about-subtitle">
+                    <p
+                      class="about-subtitle"
+                      data-aos="fade-down"
+                      data-aos-duration="1000"
+                    >
                       Tempest adalah perusahaan yang bergeak dalam bidang jasa
                       arsitektur, jasa desain dan gambar arsitek yang sudah
                       berpengalaman dalam menangani berbagai proyek secara
@@ -120,7 +156,13 @@
                     </p>
                   </div>
                   <div class="col-lg-6 order-lg-2 order-sm-1 order-xs-1">
-                    <img src="/image/item-1.png" class="about-img" alt="" />
+                    <img
+                      src="/image/item-1.png"
+                      class="about-img"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="1500"
+                    />
                   </div>
                 </div>
               </div>
@@ -128,13 +170,23 @@
             <div class="structure-board" id="structure">
               <div class="row text-center">
                 <div class="col-12">
-                  <h2 class="structure-title">Our Team</h2>
+                  <h2
+                    class="structure-title"
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                  >
+                    Our Team
+                  </h2>
                 </div>
               </div>
               <div class="row text-center">
                 <div class="col-lg-12">
                   <!-- Family tree -->
-                  <div class="chart tree">
+                  <div
+                    class="chart tree"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                  >
                     <ul>
                       <li>
                         <a href="#">
@@ -206,7 +258,11 @@
                     </ul>
                   </div>
                   <!-- Slider version -->
-                  <div class="carousel-version">
+                  <div
+                    class="carousel-version"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                  >
                     <div
                       id="carouselExampleControls"
                       class="carousel slide"
@@ -404,6 +460,7 @@
                 </div>
               </div>
             </div>
+            <!-- Articles -->
             <div class="articles" id="articles">
               <div
                 class="container"
@@ -411,10 +468,20 @@
               >
                 <div class="row text-center">
                   <div class="col-lg-12">
-                    <h2 class="article-main-title">Our article</h2>
+                    <h2
+                      class="article-main-title"
+                      data-aos="fade-down"
+                      data-aos-duration="500"
+                    >
+                      Our article
+                    </h2>
                     <br />
                     <a href="article.html">
-                      <div class="arrow">
+                      <div
+                        class="arrow"
+                        data-aos="fade-down"
+                        data-aos-duration="1000"
+                      >
                         <img src="/image/Vector.png" alt="" />
                         <br />
                         <img src="/image/Vector-1.png" alt="" />
@@ -424,7 +491,11 @@
                 </div>
                 <div class="row">
                   <div class="col-lg-4">
-                    <div class="card align-items-center w-100 border-0">
+                    <div
+                      class="card align-items-center w-100 border-0"
+                      data-aos="fade-down"
+                      data-aos-duration="500"
+                    >
                       <img
                         src="/image/article-1.png"
                         class="card-img-top"
@@ -452,7 +523,11 @@
                     </div>
                   </div>
                   <div class="col-lg-4">
-                    <div class="card align-items-center w-100 border-0">
+                    <div
+                      class="card align-items-center w-100 border-0"
+                      data-aos="fade-down"
+                      data-aos-duration="1000"
+                    >
                       <img
                         src="/image/article-2.png"
                         class="card-img-top"
@@ -481,7 +556,11 @@
                     </div>
                   </div>
                   <div class="col-lg-4">
-                    <div class="card align-items-center w-100 border-0">
+                    <div
+                      class="card align-items-center w-100 border-0"
+                      data-aos="fade-down"
+                      data-aos-duration="1500"
+                    >
                       <img
                         src="/image/article-3.png"
                         class="card-img-top"
@@ -522,10 +601,10 @@
             <div class="gallery-section" id="gallery">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <p class="galley-title mb-4">Gallery</p>
+                  <p class="gallery-title mb-4" data-aos="fade-down">Gallery</p>
                 </div>
               </div>
-              <div class="gallery-slide">
+              <div class="gallery-slide" data-aos="fade-down">
                 <div class="row">
                   <div class="col-lg-12">
                     <div
@@ -587,35 +666,83 @@
               <div class="gallery-image">
                 <div class="row text-center mb-4">
                   <div class="col-lg-4">
-                    <img src="/image/gallery-1.png" alt="" />
+                    <a href="#1" class="hover">
+                      <img
+                        src="/image/gallery-1.png"
+                        alt=""
+                        data-aos="fade-down"
+                        data-aos-duration="500"
+                      />
+                    </a>
+                    <div class="overlay"></div>
                   </div>
                   <div class="col-lg-4">
-                    <img src="/image/gallery-2.png" alt="" />
+                    <img
+                      src="/image/gallery-2.png"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="700"
+                    />
                   </div>
                   <div class="col-lg-4">
-                    <img src="/image/gallery-3.png" alt="" />
+                    <img
+                      src="/image/gallery-3.png"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="900"
+                    />
                   </div>
                 </div>
                 <div class="row text-center mb-4">
                   <div class="col-lg-4">
-                    <img src="/image/gallery-4.png" alt="" />
+                    <img
+                      src="/image/gallery-4.png"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="1100"
+                    />
                   </div>
                   <div class="col-lg-4">
-                    <img src="/image/gallery-5.png" alt="" />
+                    <img
+                      src="/image/gallery-5.png"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="1300"
+                    />
                   </div>
                   <div class="col-lg-4">
-                    <img src="/image/gallery-6.png" alt="" />
+                    <img
+                      src="/image/gallery-6.png"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="1500"
+                    />
                   </div>
                 </div>
                 <div class="row text-center mb-4">
                   <div class="col-lg-4">
-                    <img src="/image/gallery-7.png" alt="" />
+                    <img
+                      src="/image/gallery-7.png"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="1700"
+                    />
                   </div>
                   <div class="col-lg-4">
-                    <img src="/image/gallery-8.png" alt="" />
+                    <img
+                      src="/image/gallery-8.png"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="1900"
+                    />
                   </div>
                   <div class="col-lg-4">
-                    <img src="/image/gallery-9.png" alt="" />
+                    <img
+                      src="/image/gallery-9.png"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="2100"
+                    />
                   </div>
                 </div>
               </div>
@@ -675,5 +802,12 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="/vendor/jquery-3.6.0.min.js"></script>
+
+    <script src="/vendor/scroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

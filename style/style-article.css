@@ -4,6 +4,11 @@ body {
   overflow-x: hidden;
 }
 
+.card-deck img {
+  width: 300px;
+  height: 200px;
+}
+
 .navbar {
   z-index: 2;
 }
@@ -106,27 +111,6 @@ hr {
   flex-direction: column;
 }
 
-@media (max-width: 992px) {
-  .contact-info {
-    height: 400px;
-  }
-  .footer-title,
-  .footer-contact,
-  .footer-social {
-    display: flex;
-    margin-bottom: 40px;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .footer-contact {
-    text-align: center;
-  }
-
-  .footer-brand {
-    margin-left: 20px;
-  }
-}
 .article-title {
   font-style: normal;
   font-weight: 800;
@@ -158,4 +142,58 @@ hr {
   height: 40px;
   border-radius: 7px;
   background-color: #495866;
+}
+
+.link-article {
+  display: none;
+}
+
+.other-post-sm {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .site-footer {
+    margin-top: 40px;
+  }
+  .contact-info {
+    height: 400px;
+  }
+  .footer-title,
+  .footer-contact,
+  .footer-social {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-left: 20px;
+  }
+
+  .link-article {
+    display: inline;
+  }
+
+  .other-post {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .other-post-sm {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .card-deck img {
+    width: 250px;
+    height: 150px;
+  }
 }
