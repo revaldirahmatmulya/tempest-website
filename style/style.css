@@ -243,11 +243,11 @@ hr {
   align-items: center;
   flex-direction: column;
 }
-@media (max-width: 576px) {
+@media (min-width: 0px) and (max-width: 576px) {
   .title-hero {
     z-index: 3;
     position: absolute;
-    bottom: 350px;
+    bottom: 200px;
     left: 20px;
   }
   .circle-bg {
@@ -256,7 +256,7 @@ hr {
     height: 500px;
     opacity: 0.5;
     position: absolute;
-    bottom: 230px;
+    bottom: 100px;
     left: -100px;
     border-radius: 100%;
 
@@ -265,15 +265,15 @@ hr {
   .title-item {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 800;
-    font-size: 42px;
+    font-weight: 800px;
+    font-size: 35px;
     color: white;
   }
 
   .subtitle-item {
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 10px;
     color: white;
   }
   .about-text {
@@ -341,7 +341,7 @@ hr {
     width: 100px;
   }
 
-  .carousel-item {
+  .carousel-item-structure {
     height: 500px;
   }
 
