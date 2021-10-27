@@ -243,7 +243,10 @@ hr {
   align-items: center;
   flex-direction: column;
 }
-@media (min-width: 0px) and (max-width: 576px) {
+/* @media (min-width: 0px) and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   .title-hero {
     z-index: 3;
     position: absolute;
@@ -387,8 +390,8 @@ hr {
   .footer-brand {
     margin-left: 20px;
   }
-}
-@media (min-width: 578px) and (max-width: 768px) {
+} */
+/* @media (min-width: 578px) and (max-width: 768px) {
   .title-hero {
     z-index: 3;
     position: absolute;
@@ -520,9 +523,9 @@ hr {
   .footer-brand {
     margin-left: 20px;
   }
-}
+} */
 
-@media (min-width: 769px) and (max-width: 992px) {
+/* @media (min-width: 769px) and (max-width: 992px) {
   .title-hero {
     z-index: 3;
     position: absolute;
@@ -640,4 +643,4 @@ hr {
   .footer-brand {
     margin-left: 20px;
   }
-}
+} */
