@@ -391,7 +391,7 @@ hr {
     margin-left: 20px;
   }
 } */
-/* @media (min-width: 578px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .title-hero {
     z-index: 3;
     position: absolute;
@@ -523,7 +523,7 @@ hr {
   .footer-brand {
     margin-left: 20px;
   }
-} */
+}
 
 /* @media (min-width: 769px) and (max-width: 992px) {
   .title-hero {
