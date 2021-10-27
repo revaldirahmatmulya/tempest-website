@@ -28,7 +28,7 @@ body {
 }
 
 .hero-img {
-  height: 750px;
+  height: 100vh;
 }
 
 .circle-bg {
@@ -36,8 +36,8 @@ body {
   width: 900px;
   height: 700px;
   opacity: 0.5;
-  position: absolute;
-  bottom: 100px;
+  position: relative;
+  bottom: 800px;
   left: -200px;
   border-radius: 100%;
 
@@ -45,16 +45,16 @@ body {
 }
 .title-hero {
   z-index: 3;
-  position: absolute;
-  bottom: 250px;
+  position: relative;
+  bottom: 1250px;
+  right: 100px;
 }
 
 .title-item {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .subtitle-item {
@@ -70,7 +70,7 @@ body {
   width: 100%;
   height: 2500px;
   z-index: 4;
-  margin-top: -80px;
+  margin-top: -1050px;
   margin-bottom: 50px;
 }
 
@@ -243,7 +243,7 @@ hr {
   align-items: center;
   flex-direction: column;
 }
-/* @media (min-width: 0px) and (max-width: 576px) {
+/* @media screen and (min-width: 0px) and (max-width: 576px) {
   body {
     overflow-x: hidden;
   }
@@ -391,7 +391,7 @@ hr {
     margin-left: 20px;
   }
 } */
-@media (max-width: 768px) {
+/* @media screen and (max-width: 576px) and (max-width: 768px) {
   .title-hero {
     z-index: 3;
     position: absolute;
@@ -523,14 +523,27 @@ hr {
   .footer-brand {
     margin-left: 20px;
   }
-}
+} */
 
-/* @media (min-width: 769px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  .hero-img {
+    height: 100%;
+  }
+
   .title-hero {
     z-index: 3;
-    position: absolute;
-    bottom: 250px;
-    left: 40px;
+    position: relative;
+    bottom: 1120px;
+    right: 100px;
+  }
+  .title-item {
+    font-size: 42px;
+  }
+  .subtitle-item {
+    font-size: 14px;
   }
   .about-text {
     margin-top: 200px;
@@ -548,7 +561,7 @@ hr {
     width: 90%;
     height: auto;
     z-index: 4;
-    margin-top: -100px;
+    margin-top: -980px;
     margin-bottom: 100px;
     position: relative;
     left: 50%;
@@ -597,7 +610,7 @@ hr {
     width: 100px;
   }
 
-  .carousel-item {
+  .carousel-item-structure {
     height: 500px;
   }
 
@@ -643,4 +656,4 @@ hr {
   .footer-brand {
     margin-left: 20px;
   }
-} */
+}
