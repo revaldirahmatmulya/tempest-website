@@ -309,7 +309,7 @@ hr {
     height: auto;
     z-index: 4;
     margin-top: -40px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -373,9 +373,7 @@ hr {
   .btn-card {
     margin-bottom: 40px;
   }
-  .gallery-title {
-    margin-top: -50px;
-  }
+
   .gallery-image {
     display: none;
   }
