@@ -1,14 +1,14 @@
 html {
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+
   background-color: #e5e5e5;
 }
 
 .navbar {
-  z-index: 2;
+  z-index: 4;
 }
 .navbar-custom .navbar-brand {
   color: #739dc3;
@@ -26,9 +26,12 @@ body {
 .nav-link:hover {
   color: #b8b8b8;
 }
-
+.site-hero {
+  position: relative;
+}
 .hero-img {
   height: 100vh;
+  z-index: 1;
 }
 
 .circle-bg {
@@ -36,18 +39,18 @@ body {
   width: 900px;
   height: 700px;
   opacity: 0.5;
-  position: relative;
-  bottom: 800px;
+  position: absolute;
+  bottom: 170px;
   left: -200px;
   border-radius: 100%;
 
-  z-index: 1;
+  z-index: 2;
 }
 .title-hero {
   z-index: 3;
-  position: relative;
-  bottom: 1250px;
-  right: 100px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
 }
 
 .title-item {
@@ -70,7 +73,8 @@ body {
   width: 100%;
   height: 2500px;
   z-index: 4;
-  margin-top: -1050px;
+  position: relative;
+  margin-top: -100px;
   margin-bottom: 50px;
 }
 
@@ -79,11 +83,11 @@ body {
   padding-right: 10px;
 }
 .about-text {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .about-img {
-  margin-top: 200px;
+  margin-top: 100px;
   width: 100%;
   height: 400px;
 }
@@ -165,7 +169,10 @@ body {
   color: #73233c;
   margin-top: 20px;
 }
-
+.gallery-image img {
+  width: 350px;
+  height: 350px;
+}
 hr {
   width: 98%;
   border: 0;
@@ -524,26 +531,42 @@ hr {
     margin-left: 20px;
   }
 } */
-
-@media screen and (max-width: 992px) {
-  body {
-    overflow-x: hidden;
-  }
+@media all and (max-width: 376px) {
   .hero-img {
     height: 100%;
   }
+  .about-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img {
+    order: 1;
+  }
 
+  .about-text {
+    order: 2;
+  }
+  .site-hero {
+    position: relative;
+  }
+  .circle-bg {
+    bottom: 50px;
+    left: -90px;
+    width: 500px;
+    height: 300px;
+  }
   .title-hero {
     z-index: 3;
-    position: relative;
-    bottom: 1120px;
-    right: 100px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
   }
   .title-item {
-    font-size: 42px;
+    font-size: 22px;
   }
   .subtitle-item {
-    font-size: 14px;
+    font-size: 8px;
+    margin-top: -30px;
   }
   .about-text {
     margin-top: 200px;
@@ -561,7 +584,164 @@ hr {
     width: 90%;
     height: auto;
     z-index: 4;
-    margin-top: -980px;
+    margin-top: -40px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .structure-board {
+    margin-top: 150px;
+    background-color: #f6d5cf;
+    width: 100%;
+    height: 800px;
+  }
+
+  .chart {
+    display: none;
+  }
+
+  .carousel-version {
+    display: inline;
+  }
+  .img-carousel {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .team-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #739dc3;
+  }
+  .team-title {
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f57c00;
+  }
+
+  .card-team {
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 370px;
+    width: 100px;
+  }
+
+  .carousel-item-structure {
+    height: 500px;
+  }
+
+  .carousel-btn-next-icon,
+  .carousel-btn-prev-icon {
+    height: 80px;
+    width: 80px;
+
+    background-color: #73233c;
+    border-radius: 100%;
+  }
+
+  .btn-card {
+    margin-bottom: 40px;
+  }
+  .gallery-title {
+    margin-top: -50px;
+  }
+  .gallery-image {
+    display: none;
+  }
+
+  .gallery-slide {
+    display: inherit;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .contact-info {
+    height: 400px;
+  }
+  .footer-title,
+  .footer-contact,
+  .footer-social {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-left: 20px;
+  }
+}
+
+@media all and (min-width: 377px) and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero-img {
+    height: 100%;
+  }
+  .about-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img {
+    order: 1;
+  }
+
+  .about-text {
+    order: 2;
+  }
+  .site-hero {
+    position: relative;
+  }
+  .circle-bg {
+    top: -200px;
+    left: -200px;
+    width: 900px;
+    height: 800px;
+  }
+  .title-hero {
+    z-index: 3;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+  }
+  .title-item {
+    font-size: 64px;
+  }
+  .subtitle-item {
+    font-size: 20px;
+    margin-top: -30px;
+  }
+
+  .about-text {
+    margin-top: 200px;
+  }
+
+  .about-img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-card {
+    background-color: white;
+    border-radius: 50px;
+    width: 90%;
+    height: auto;
+    z-index: 4;
+    margin-top: -50px;
     margin-bottom: 100px;
     position: relative;
     left: 50%;
@@ -655,5 +835,55 @@ hr {
 
   .footer-brand {
     margin-left: 20px;
+  }
+}
+@media all and (max-width: 1261px) {
+  .chart {
+    display: none;
+  }
+
+  .carousel-version {
+    display: inline;
+  }
+  .img-carousel {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .team-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #739dc3;
+  }
+  .team-title {
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f57c00;
+  }
+
+  .card-team {
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 370px;
+    width: 100px;
+  }
+
+  .carousel-item-structure {
+    margin-top: 100px;
+    height: 500px;
+  }
+
+  .carousel-btn-next-icon,
+  .carousel-btn-prev-icon {
+    height: 80px;
+    width: 80px;
+
+    background-color: #73233c;
+    border-radius: 100%;
   }
 }
