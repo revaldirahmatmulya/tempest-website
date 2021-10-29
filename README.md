@@ -17,7 +17,7 @@ Languages :
 * Javascript
 
 Framework : 
-* Bootstrap
+* Bootstrap 5
 
 Library :
 * Jquery
