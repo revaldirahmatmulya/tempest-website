@@ -3,11 +3,11 @@
 ## Description
 
 Responsive organization website,compatible with
-Desktop (HD - FHD)
-Mobile with < 376px
+* Desktop (HD - FHD)
+* Mobile with < 376px
 
 Click on our github pages,or click this link :
-[Website Link](https://revaldirahmatmulya.github.io/tempest-website/)
+* [Website Link](https://revaldirahmatmulya.github.io/tempest-website/)
 
 ## Authors
 
