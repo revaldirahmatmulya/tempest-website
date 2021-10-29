@@ -11,7 +11,7 @@ Click on our github pages,or click this link :
 
 ## Technology Used
 
-Language :
+Languages :
 * HTML 5
 * CSS 3
 * Javascript
@@ -24,7 +24,6 @@ Library :
 * [Animated on Scroll](https://github.com/michalsnik/aos)
 
 ## Authors
-
 
 Revaldi Rahmatmulya as Frontend Developer
 [@Revaldi_kun](https://www.instagram.com/revaldi_kun/)
