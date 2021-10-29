@@ -12,16 +12,16 @@ Click on our github pages,or click this link :
 ## Technology Used
 
 Language :
-*HTML 5
-*CSS 3
-*Javascript
+* HTML 5
+* CSS 3
+* Javascript
 
 Framework : 
-*Bootstrap
+* Bootstrap
 
 Library :
-*Jquery
-*[Animated on Scroll](https://github.com/michalsnik/aos)
+* Jquery
+* [Animated on Scroll](https://github.com/michalsnik/aos)
 
 ## Authors
 
