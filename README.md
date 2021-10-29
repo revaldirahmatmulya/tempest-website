@@ -9,6 +9,20 @@ Responsive organization website,compatible with :
 Click on our github pages,or click this link :
 * [Website Link](https://revaldirahmatmulya.github.io/tempest-website/)
 
+## Technology Used
+
+Language :
+*HTML 5
+*CSS 3
+*Javascript
+
+Framework : 
+*Bootstrap
+
+Library :
+*Jquery
+*[Animated on Scroll](https://github.com/michalsnik/aos)
+
 ## Authors
 
 
