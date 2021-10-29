@@ -2,7 +2,7 @@
 
 ## Description
 
-Responsive organization website,compatible with
+Responsive organization website,compatible with :
 * Desktop (HD - FHD)
 * Mobile with < 376px
 
